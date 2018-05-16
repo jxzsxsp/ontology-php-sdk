@@ -11,7 +11,7 @@
         "sdk"
     ],
     "homepage": "http://www.xiaoshuiping.cn",
-    "license": "Apache",
+    "license": "MIT",
     "authors": [
         {
             "name": "Sean.Xiao",
