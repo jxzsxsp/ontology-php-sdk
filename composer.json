@@ -1,0 +1,51 @@
+{
+    "name": "jxzsxsp/ontology-php-sdk",
+    "type": "library",
+    "description": "Ontology SDK library for PHP",
+    "keywords": [
+        "ontology-php-sdk",
+        "ontology",
+        "php",
+        "blockchain",
+        "ont",
+        "sdk"
+    ],
+    "homepage": "http://www.xiaoshuiping.cn",
+    "license": "Apache",
+    "authors": [
+        {
+            "name": "Sean.Xiao",
+            "email": "jxzsxsp@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpstan/phpstan-phpunit": "^0.9.4",
+        "phpstan/phpstan-shim": "^0.9",
+        "phpstan/phpstan-strict-rules": "^0.9.0",
+        "phpunit/phpunit": "^7.0.0",
+        "symplify/coding-standard": "^3.1",
+        "symplify/easy-coding-standard": "^3.1"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Ontology\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ontology\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "check-cs": "vendor/bin/ecs check src tests bin",
+        "fix-cs": "vendor/bin/ecs check src tests bin --fix",
+        "phpstan": "vendor/bin/phpstan.phar analyse src tests bin --level max --configuration phpstan.neon"
+    }
+}
