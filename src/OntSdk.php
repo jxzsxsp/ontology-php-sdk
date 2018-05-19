@@ -11,7 +11,8 @@ declare(strict_types=1);
 
 namespace Ontology;
 
-class OntSdk {
+class OntSdk
+{
 
 	private $hi = "Hello ";
 
@@ -24,5 +25,3 @@ class OntSdk {
 	}
 
 }
-
-?>
