@@ -17,14 +17,8 @@ use PHPUnit\Framework\TestCase;
 class OntSdkTest extends TestCase
 {
 
-    public function testHi():void {
-        $ontSdk = new OntSdk();
-        echo $ontSdk->hi("Sean")."\n";
-    }
+    public function testSdk():void {
 
-    public function testAdd():void {
-        $ontSdk = new OntSdk();
-        echo $ontSdk->add(1, 2)."\n";
     }
 
 }

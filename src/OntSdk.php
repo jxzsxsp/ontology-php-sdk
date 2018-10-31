@@ -14,14 +14,19 @@ namespace Ontology;
 class OntSdk
 {
 
-	private $hi = "Hello ";
+    private $ontSdk;
 
-	public function hi($name):string {
-	    return $this->hi.$name;
-	}
+    public function __construct()
+    {
+    }
 
-	public function add($a, $b):int {
-		return $a + $b;
-	}
+    public function getInstance():OntSdk {
+
+        if(!isset($this->ontSdk)){
+            $this->ontSdk = new OntSdk();
+        }
+
+        return $this->ontSdk;
+    }
 
 }
